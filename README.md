@@ -14,16 +14,6 @@ The Salary Management System is a database project designed to efficiently manag
 
 ---
 
-## **ER Diagram 📊**
-![ER Diagram](docs/ER_Diagram.png)
-
----
-
-## **Relational Schema 📋**
-![Relational Schema](docs/Relational_Schema.png)
-
----
-
 ## **How to Use 🚀**
 
 ### **1. Set up Oracle Database:**
