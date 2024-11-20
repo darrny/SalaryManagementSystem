@@ -1,0 +1,17 @@
+CREATE OR REPLACE TRIGGER TrackSalaryChange
+AFTER UPDATE ON Employee_Salary
+FOR EACH ROW
+BEGIN
+    INSERT INTO EmpSalary_Audit (EID, NewSID, OldSID, ChangingDate)
+    VALUES (:NEW.EID, :NEW.SID, :OLD.SID, SYSDATE);
+END;
+/
+
+CREATE OR REPLACE TRIGGER TrackFundChange
+AFTER UPDATE ON Fund
+FOR EACH ROW
+BEGIN
+    INSERT INTO Fund_Audit (NewFund, OldFund, T_Date)
+    VALUES (:NEW.Fund_Amount, :OLD.Fund_Amount, SYSDATE);
+END;
+/
