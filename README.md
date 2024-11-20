@@ -58,3 +58,13 @@ The Salary Management System is a database project designed to efficiently manag
 ## **Prerequisites 🛠️**
 - Oracle Database installed.
 - Basic understanding of SQL and PL/SQL.
+
+---
+
+## **ER Diagram 📊**
+![ER Diagram](docs/ER_Diagram.png)
+
+---
+
+## **Relational Schema 📋**
+![Relational Schema](docs/Relational_Schema.png)
